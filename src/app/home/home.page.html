@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-title color="primary">
+      News API
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="medium" color="primary">
+  <h1>Top Headlines</h1>
+  <ion-slides pager="true">
+    <ion-slide *ngFor="let article of topHeadlineNews">
+      <a (click)="viewArticle(article)">
+        <ion-card class="slide-card" color="light">
+          <img src="{{ article.urlToImage }}" />
+          <ion-card-title class="ion-padding"
+            >{{ article.title }}
+          </ion-card-title>
+        </ion-card>
+      </a>
+    </ion-slide>
+  </ion-slides>
+
+  <h2>Business</h2>
+  <ion-grid>
+    <a *ngFor="let article of businessNews" (click)="viewArticle(article)">
+      <ion-row class="row-container">
+        <ion-col>
+          <img src="{{ article.urlToImage }}" />
+        </ion-col>
+        <ion-col>
+          <p class="news-title">{{ article.title }}</p>
+        </ion-col>
+        <div class="horizontal-line"></div>
+      </ion-row>
+    </a>
+  </ion-grid>
+
+  <h2>Technology</h2>
+  <ion-grid>
+    <a *ngFor="let article of technologyNews" (click)="viewArticle(article)">
+      <ion-row class="row-container">
+        <ion-col>
+          <img src="{{ article.urlToImage }}" />
+        </ion-col>
+        <ion-col>
+          <p class="news-title">{{ article.title }}</p>
+        </ion-col>
+        <div class="horizontal-line"></div>
+      </ion-row>
+    </a>
+  </ion-grid>
+</ion-content>
