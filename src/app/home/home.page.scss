@@ -1,18 +1,18 @@
 ion-title {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
 }
 
 h1 {
   margin-left: 15px;
-  color: var(--ion-color-white);
+  color: var(--ion-color-primary);
   font-size: 22px;
 }
 
 h2 {
   margin-left: 15px;
-  color: var(--ion-color-white);
+  color: var(--ion-color-primary);
   font-size: 20px;
 }
 
@@ -30,13 +30,13 @@ ion-card-title {
 
 .news-title {
   margin-top: 0px;
-  color: var(--ion-color-white);
+  color: var(--ion-color-secondary);
 }
 
 .horizontal-line {
   height: 1px;
   width: 100vw;
-  background-color: var(--ion-color-light);
+  background-color: var(--ion-color-medium);
   margin-top: 3px;
 }
 
@@ -49,6 +49,6 @@ ion-card-title {
   .news-title {
     margin-top: 0px;
     font-size: 14px;
-    color: var(--ion-color-white);
+    color: var(--ion-color-secondary);
   }
 }
